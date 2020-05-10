@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "jumbo jumbo jumbo"
+    "game game game"
+    "... sidebar ...";
+}
+
+.jumbo-art {
+    background-image: url("../images/hip-hop2.jpg");
+    border-radius: 0;
+    grid-area: jumbo;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    margin-bottom: 20px;
+}
+
+.game-area {
+    grid-area: game;
+    margin-bottom: 20px
+}
+
+.record {
+    margin-bottom: 10px;
+}
+
+.image {
+    height: 100%;
+}
+
+.pic-div {
+    height: 180px;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "jumbo jumbo"
+        "sidebar game";
+    }
+}
