@@ -20,6 +20,7 @@ body {
     background-image: url("../images/hip-hop2.jpg");
     border-radius: 0;
     grid-area: jumbo;
+    margin-top: 40px;
 }
 
 .sidebar {

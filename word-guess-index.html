@@ -14,22 +14,24 @@
         <div class="jumbotron jumbo-art">
             <h1 class="display-4">Hip Hop Trivia</h1>
             <p class="lead">Welcome to Hip-Hop Trivia where right answers lead to a good time.</p>
-            <hr class="my-4">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Start Game</a>
           </div>
 
           <div class="sidebar">
           <div class="card record text-center" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Record</h5>
-              <p class="card-text">Wins: <span class="win-count">0</span></p>
-              <p class="card-text">Losses: <span class="losses-count">0</span></p>
+              <p class="card-text">Wins: <span id="wins">0</span></p>
+              <p class="card-text">Losses: <span id="loses">0</span></p>
             </div>
           </div>
           <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
+              <h5 class="card-title">Guesses Left</h5>
+              <p id="gleft" class="card-text"></p>
+            </div>
+            <div class="card-body">
               <h5 class="card-title">Letters guessed</h5>
-              <p class="card-text">_ _ _ _ _ _ _ _</p>
+              <p id="used" class="card-text"></p>
             </div>
           </div>
         </div>
@@ -38,8 +40,8 @@
             <div class="pic-div">
                 <img src="./assets/images/goodluck.jpeg" class="card-img-top image" alt="...">
             </div>
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div>
+              <h1 id="word"></h1>
             </div>
           </div>
           
@@ -50,18 +52,8 @@
 
 
 
-<script type="text/javascript"></script> </script>
+<script src="assets/javascript/game.js" type="text/javascript"></script> </script>
 </body>
 
 
 </html>
-
-   <!-- <p class="" id="directions-text">Press key to get started!</p>
-    <p id="wins-count">Wins</p>
-    <p id="current-word">Current Word</p>
-    <p id="blank-spaces"></p>
-    <p id="guess-left">Number of guesses left</p>
-    <p id="guess-counter"></p>
-    <p id="old-letters">Letters already guessed</p>
-    <p id="old-counter"></p>
-    <p id="the-word"></p> -->
